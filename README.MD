@@ -7,7 +7,8 @@ This repository documents my journey of learning web development. It contains my
 - 📄 [HTML](./HTML/html.md)
 - 🎨 [CSS](./CSS/css.md)
 - ⚡ [JavaScript](./JAVASCRIPT/js.md)
-- 🌿 [Git & GitHu](./GIT&GITHUB/git&github.md)
+- 🌿 [Git & GitHub](./GIT&GITHUB/git&github.md)
+- 🔌 [APIs & Fetch](API.MD/api.md)
 
 ## 🎯 Goal
 
