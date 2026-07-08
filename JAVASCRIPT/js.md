@@ -229,3 +229,267 @@ JavaScript should improve the user experience instead of being the only thing th
 - Accessing the event object
 - Following the Select → Listen → Do approach
 - Removing event listeners when needed
+
+
+
+---
+
+# 📦 Objects
+
+Objects are used to store related information in the form of **key-value pairs**.
+
+```javascript
+const user = {
+  name: "Gaurav",
+  age: 20,
+  city: "Delhi"
+};
+```
+
+Objects help organize related data into a single structure.
+
+---
+
+# 🔑 Accessing Object Properties
+
+There are two common ways to access object properties.
+
+## Dot Notation
+
+```javascript
+user.name;
+```
+
+## Bracket Notation
+
+```javascript
+user["name"];
+```
+
+You can also:
+
+- Add new properties
+- Update existing properties
+- Delete properties
+
+```javascript
+user.email = "abc@gmail.com";
+
+user.age = 21;
+
+delete user.city;
+```
+
+---
+
+# 🛠 Object Methods & `this`
+
+Objects can also contain functions called **methods**.
+
+```javascript
+const user = {
+  name: "Gaurav",
+
+  greet() {
+    console.log(`Hello ${this.name}`);
+  }
+};
+```
+
+The `this` keyword refers to the current object.
+
+---
+
+# 🔄 Looping Through Objects
+
+## `for...in`
+
+```javascript
+for (let key in user) {
+  console.log(key, user[key]);
+}
+```
+
+## `Object.keys()`
+
+Returns an array of all keys.
+
+```javascript
+Object.keys(user);
+```
+
+## `Object.values()`
+
+Returns an array of all values.
+
+```javascript
+Object.values(user);
+```
+
+## `Object.entries()`
+
+Returns an array of key-value pairs.
+
+```javascript
+Object.entries(user);
+```
+
+---
+
+# 🧩 Nested Objects
+
+Objects can contain other objects.
+
+```javascript
+const student = {
+  name: "Gaurav",
+  address: {
+    city: "Delhi",
+    country: "India"
+  }
+};
+```
+
+Nested objects are useful for representing structured data.
+
+---
+
+# 📋 Arrays of Objects
+
+An array can store multiple objects.
+
+```javascript
+const users = [
+  { id: 1, name: "Gaurav" },
+  { id: 2, name: "Rahul" }
+];
+```
+
+This is the most common data structure returned by APIs.
+
+---
+
+# 🚀 Array Methods
+
+## `forEach()`
+
+Runs a function for every element.
+
+```javascript
+numbers.forEach(num => console.log(num));
+```
+
+✅ Returns nothing.
+
+---
+
+## `map()`
+
+Creates a new array after transforming each element.
+
+```javascript
+const doubled = numbers.map(num => num * 2);
+```
+
+✅ Returns a new array.
+
+---
+
+## `filter()`
+
+Returns elements that satisfy a condition.
+
+```javascript
+const even = numbers.filter(num => num % 2 === 0);
+```
+
+✅ Returns a new array.
+
+---
+
+## `find()`
+
+Returns the first matching element.
+
+```javascript
+const user = users.find(user => user.id === 2);
+```
+
+✅ Returns one value.
+
+---
+
+## `some()`
+
+Checks whether at least one element satisfies a condition.
+
+```javascript
+numbers.some(num => num > 10);
+```
+
+Returns `true` or `false`.
+
+---
+
+## `every()`
+
+Checks whether all elements satisfy a condition.
+
+```javascript
+numbers.every(num => num > 0);
+```
+
+Returns `true` or `false`.
+
+---
+
+## `sort()`
+
+Sorts the array.
+
+```javascript
+numbers.sort((a, b) => a - b);
+```
+
+---
+
+## `reduce()`
+
+Combines all elements into a single value.
+
+```javascript
+const total = numbers.reduce((sum, num) => sum + num, 0);
+```
+
+Common use cases:
+
+- Sum
+- Total price
+- Counting
+- Accumulation
+
+---
+
+# 🌐 Real API Data
+
+During the session, I inspected a real API response in the browser's **Network** tab.
+
+I observed that most API responses contain **arrays of objects**, making methods like `map()`, `filter()`, `find()`, and `reduce()` very useful in real-world development.
+
+---
+
+# 📝 ONE LINER
+
+- Objects store related data as key-value pairs.
+- Objects can contain both properties and methods.
+- `this` refers to the current object.
+- Nested objects help organize complex data.
+- APIs commonly return arrays of objects.
+- `forEach()` is used for iteration.
+- `map()` transforms data into a new array.
+- `filter()` returns matching elements.
+- `find()` returns the first matching element.
+- `some()` checks if at least one element matches.
+- `every()` checks if all elements match.
+- `sort()` arranges array elements.
+- `reduce()` combines multiple values into a single result.
