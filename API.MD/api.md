@@ -322,3 +322,81 @@ This helped me understand:
 - Always check `response.ok` because `fetch()` does not throw errors for 404 or 500 responses.
 - Store API keys and Bearer tokens securely in `.env`.
 - Never commit secret keys to GitHub.
+
+
+## 📚 Today's Learning
+
+### 🌐 Understanding REST APIs
+
+Today I learned how a REST API allows the frontend and backend to communicate with each other. Instead of directly accessing the database, the frontend sends a request to the server, and the server processes it before sending back a response.
+
+I also understood that every resource (such as a user, document, or template) has its own endpoint, and different HTTP methods perform different actions.
+
+- **GET** → Fetch existing data
+- **POST** → Create new data
+- **PUT** → Update existing data
+- **DELETE** → Remove existing data
+
+I learned that APIs usually exchange information in **JSON** format and return HTTP status codes like **200 (Success)**, **201 (Created)**, **404 (Not Found)**, and **500 (Server Error)**.
+
+---
+
+### 🛠️ API Structure
+
+We explored how a Resume Builder API can be organized into different resources.
+
+Some of the main API modules include:
+
+- Authentication
+- Users
+- Documents
+- Sections & Items
+- Templates
+- Version History
+- AI Features
+- ATS Check
+- Resume Tailoring
+- Export (PDF & DOCX)
+- Sharing
+- Job Application Tracker
+
+This made it easier to understand how large applications organize their backend APIs.
+
+---
+
+### 💾 Browser Storage
+
+Another important topic was how browsers store data locally.
+
+#### 🍪 Cookies
+Used mainly for authentication and login sessions. Cookies are automatically sent to the server with every request.
+
+#### 📦 Local Storage
+Stores data permanently until it is manually removed. Useful for saving user preferences like themes or language settings.
+
+#### 📝 Session Storage
+Works only while the browser tab is open. Once the tab is closed, all stored data is cleared.
+
+#### 🗄️ IndexedDB
+A powerful browser database used for storing large amounts of structured data, making offline applications possible.
+
+---
+
+### 🌍 Real-World Examples
+
+- Gmail uses **Cookies** to keep users logged in.
+- YouTube uses **Local Storage** to remember user preferences.
+- Amazon combines **Cookies** and **Local Storage** for login and cart information.
+- Google Docs uses **IndexedDB** for offline document editing.
+- Spotify stores downloaded songs using **IndexedDB**.
+- Google Maps saves offline maps using **IndexedDB**.
+
+---
+
+### 🎯 Key Takeaways
+
+- REST APIs make communication between frontend and backend simple and organized.
+- HTTP methods define what action should be performed on a resource.
+- JSON is the standard format for sending and receiving API data.
+- Different browser storage options exist for different use cases.
+- Choosing the right storage method improves both performance and user experience.
