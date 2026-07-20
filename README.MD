@@ -10,6 +10,7 @@ This repository documents my journey of learning web development. It contains my
 - 🌿 [Git & GitHub](./GIT&GITHUB/git&github.md)
 - 🔌 [APIs & Fetch](API.MD/api.md)
 - 🗄️ [Database](./DATABASE/db.md)
+- 📝 [MOM - Doubt Clearing](./MOM/mom.md)
 
 ## 🎯 Goal
 
