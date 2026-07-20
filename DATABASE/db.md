@@ -1,8 +1,4 @@
-# Day 18 - MySQL, Tables and Joins
-
-**Module:** Database (Module 4)
-**Instructor:** Dinesh Rawat
-**Class:** 1 of 5
+# MySQL, Tables and Joins
 
 ## What This Class Was About
 
