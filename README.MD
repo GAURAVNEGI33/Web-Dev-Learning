@@ -8,7 +8,7 @@ This repository documents my journey of learning web development. It contains my
 - 🎨 [CSS](./CSS/css.md)
 - ⚡ [JavaScript](./JAVASCRIPT/js.md)
 - 🌿 [Git & GitHub](./GIT&GITHUB/git&github.md)
-- 🔌 [APIs & Fetch](API.MD/api.md)
+- 🔌 [APIs & Fetch](API/api.md)
 - 🗄️ [Database](./DATABASE/db.md)
 - 📝 [MOM - Doubt Clearing](./MOM/mom.md)
 
