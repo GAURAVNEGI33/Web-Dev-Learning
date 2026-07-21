@@ -186,3 +186,389 @@ This means: "Go through the `resumes` table, and for each resume, find the match
 ## Next Steps for Me
 
 My `resume-api` project currently uses JSON file storage. Now that I understand relational schema design, foreign keys, joins, and indexing, migrating it to MySQL is a good next step - it'll be a solid, explainable talking point for interviews and will help me practice these concepts hands-on.
+
+# 📌 What is Data?
+
+Data is a collection of facts or information that can be stored, processed, and managed.
+
+### Examples
+
+- Name
+- Age
+- Email
+- Phone Number
+- Salary
+
+---
+
+# 🗃️ What is a Database?
+
+A database is an organized collection of data that allows us to store, retrieve, update, and delete information efficiently.
+
+Instead of keeping data in files or notebooks, databases make it easier to manage large amounts of information.
+
+### Example
+
+A college database may store:
+
+- Students
+- Teachers
+- Courses
+- Marks
+
+---
+
+# 💾 Types of Data
+
+## 1. Structured Data
+
+Structured data is organized in rows and columns.
+
+It follows a fixed format, making it easy to search and manage.
+
+### Examples
+
+- Student records
+- Employee details
+- Bank transactions
+
+---
+
+## 2. Unstructured Data
+
+Unstructured data does not follow any fixed format.
+
+Examples include:
+
+- Images
+- Videos
+- Audio files
+- PDFs
+- Social media posts
+
+---
+
+# 🏢 What is DBMS?
+
+DBMS stands for **Database Management System**.
+
+It is software used to create, store, update, and manage databases.
+
+### Responsibilities
+
+- Store data
+- Retrieve data
+- Update records
+- Delete records
+- Manage security
+
+### Examples
+
+- MySQL
+- PostgreSQL
+- Oracle
+- SQL Server
+
+---
+
+# 🏛️ What is RDBMS?
+
+RDBMS stands for **Relational Database Management System**.
+
+It stores data in tables consisting of rows and columns.
+
+Different tables can be connected using relationships.
+
+### Example
+
+Students Table
+
+| ID  | Name  |
+| --- | ----- |
+| 1   | Rahul |
+
+Courses Table
+
+| Student_ID | Course     |
+| ---------- | ---------- |
+| 1          | JavaScript |
+
+Here, both tables are connected using **Student_ID**.
+
+---
+
+# 🌐 Database Languages
+
+Database languages are used to communicate with a database.
+
+Main categories:
+
+- DDL (Data Definition Language)
+- DML (Data Manipulation Language)
+- DQL (Data Query Language)
+- DCL (Data Control Language)
+- TCL (Transaction Control Language)
+
+---
+
+# 💻 What is SQL?
+
+SQL stands for **Structured Query Language**.
+
+It is the standard language used to communicate with relational databases.
+
+Using SQL, we can:
+
+- Create databases
+- Create tables
+- Insert data
+- Update data
+- Delete data
+- Retrieve data
+
+---
+
+# ❓ Why Learn SQL?
+
+Even if modern frameworks use ORMs like Sequelize, SQL is still important.
+
+Reasons:
+
+- Understand what happens behind the scenes.
+- Write optimized queries.
+- Debug database problems.
+- Work with any relational database.
+- Perform complex joins and reports.
+- Crack technical interviews.
+
+SQL is a fundamental skill for backend development.
+
+---
+
+# ⚡ SQL Commands
+
+## DDL (Data Definition Language)
+
+Used to define database structure.
+
+Commands:
+
+- CREATE
+- ALTER
+- DROP
+- TRUNCATE
+
+---
+
+## DML (Data Manipulation Language)
+
+Used to modify data.
+
+Commands:
+
+- INSERT
+- UPDATE
+- DELETE
+
+---
+
+## DQL (Data Query Language)
+
+Used to retrieve data.
+
+Command:
+
+- SELECT
+
+---
+
+## DCL (Data Control Language)
+
+Used for permissions.
+
+Commands:
+
+- GRANT
+- REVOKE
+
+---
+
+## TCL (Transaction Control Language)
+
+Used to manage transactions.
+
+Commands:
+
+- COMMIT
+- ROLLBACK
+- SAVEPOINT
+
+---
+
+# 🧩 MySQL Data Types
+
+Choosing the correct data type improves storage efficiency and performance.
+
+---
+
+## VARCHAR
+
+Stores variable-length text.
+
+Example:
+
+```sql
+name VARCHAR(100)
+```
+
+Suitable for:
+
+- Name
+- Email
+- Address
+
+---
+
+## STRING (TEXT)
+
+MySQL does not have a STRING data type.
+
+Instead, it provides TEXT types.
+
+Example:
+
+```sql
+description TEXT
+```
+
+Used for:
+
+- Long descriptions
+- Articles
+- Comments
+
+---
+
+## BOOLEAN
+
+Stores True or False values.
+
+Internally, MySQL stores BOOLEAN as TINYINT.
+
+Example:
+
+```sql
+isActive BOOLEAN
+```
+
+Values:
+
+- TRUE → 1
+- FALSE → 0
+
+---
+
+## TINYINT
+
+Stores very small integers.
+
+Range:
+
+Signed:
+
+-128 to 127
+
+Unsigned:
+
+0 to 255
+
+Example:
+
+```sql
+age TINYINT
+```
+
+---
+
+## ENUM
+
+Allows only predefined values.
+
+Example:
+
+```sql
+gender ENUM('Male','Female','Other')
+```
+
+Benefits:
+
+- Prevents invalid values.
+- Saves storage.
+- Keeps data consistent.
+
+---
+
+# ⚔️ SQL vs NoSQL
+
+| SQL                         | NoSQL                                                   |
+| --------------------------- | ------------------------------------------------------- |
+| Stores data in tables       | Stores data in documents, key-value pairs, graphs, etc. |
+| Fixed schema                | Flexible schema                                         |
+| Uses SQL language           | Different query methods                                 |
+| Best for structured data    | Best for semi/unstructured data                         |
+| Supports joins              | Usually avoids joins                                    |
+| Examples: MySQL, PostgreSQL | MongoDB, Cassandra, Redis                               |
+
+---
+
+# ⚙️ What is ORM?
+
+ORM stands for **Object Relational Mapping**.
+
+It allows developers to work with database records using programming language objects instead of writing SQL manually.
+
+Example using Sequelize:
+
+```javascript
+User.findAll();
+```
+
+Instead of writing:
+
+```sql
+SELECT * FROM users;
+```
+
+The ORM converts JavaScript code into SQL automatically.
+
+---
+
+# 🤔 If Sequelize Writes SQL, Why Learn SQL?
+
+Because Sequelize is only a tool.
+
+Knowing SQL helps you:
+
+- Understand generated queries.
+- Optimize performance.
+- Debug errors.
+- Write custom queries.
+- Work without an ORM when required.
+- Handle real-world backend projects confidently.
+
+A good backend developer knows both **SQL** and **ORMs**.
+
+---
+
+# 📌 Summary
+
+- Database stores organized data.
+- DBMS manages databases.
+- RDBMS stores related data in tables.
+- SQL is used to communicate with relational databases.
+- SQL has different command categories like DDL, DML, DQL, DCL, and TCL.
+- MySQL provides different data types such as VARCHAR, TEXT, BOOLEAN, TINYINT, and ENUM.
+- SQL works best with structured data, while NoSQL is suitable for flexible or unstructured data.
+- ORMs like Sequelize simplify database operations, but learning SQL is still essential for writing efficient and scalable applications.
+
+---
