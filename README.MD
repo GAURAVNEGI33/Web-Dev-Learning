@@ -12,6 +12,7 @@ This repository documents my journey of learning web development. It contains my
 - 🗄️ [Database](./DATABASE/db.md)
 - 🔗 [ORM - Sequelize](<./ORM-(SEQUELIZE)/seq.md>)
 - 📝 [MOM - Doubt Clearing](./MOM/mom.md)
+- 🔒 [Security](./SECURITY/sec.md)
 
 ## 🎯 Goal
 
