@@ -13,6 +13,7 @@ This repository documents my journey of learning web development. It contains my
 - 🔗 [ORM - Sequelize](<./ORM-(SEQUELIZE)/seq.md>)
 - 📝 [MOM - Doubt Clearing](./MOM/mom.md)
 - 🔒 [Security](./SECURITY/sec.md)
+- 🔑 [JWT & Authentication](<./JWT and  AUTH/J&A.md>)
 
 ## 🎯 Goal
 
