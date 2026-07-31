@@ -15,7 +15,7 @@ This repository documents my journey of learning web development. It contains my
 - 🔒 [Security](./SECURITY/sec.md)
 - 🔑 [JWT & Authentication](<./JWT and  AUTH/J&A.md>)
 - 📞 [Callbacks](./CALLBACKS/callbacks.md)
-
+- 🔄 [Event Loop](./JAVASCRIPT/eventloop.md)
 ## 🎯 Goal
 
 - Keep all my learning in one place.
