@@ -16,13 +16,12 @@ This repository documents my journey of learning web development. It contains my
 - 🔑 [JWT & Authentication](<./JWT and  AUTH/J&A.md>)
 - 📞 [Callbacks](./CALLBACKS/callbacks.md)
 - 🔄 [Event Loop](./JAVASCRIPT/eventloop.md)
+
 ## 🎯 Goal
 
 - Keep all my learning in one place.
 - Track my progress.
 - Create a personal knowledge base for future revision.
 - Continuously update this repository as I learn new technologies.
-
-
 
                                      THANK YOU !
