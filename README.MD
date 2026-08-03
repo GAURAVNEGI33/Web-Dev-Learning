@@ -16,6 +16,7 @@ This repository documents my journey of learning web development. It contains my
 - 🔑 [JWT & Authentication](<./JWT and  AUTH/J&A.md>)
 - 📞 [Callbacks](./CALLBACKS/callbacks.md)
 - 🔄 [Event Loop](./JAVASCRIPT/eventloop.md)
+- 🅰️ [Angular](./ANGULAR/angular.md)
 
 ## 🎯 Goal
 
