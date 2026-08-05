@@ -78,7 +78,7 @@ I also learned the basic concept of how components talk to each other:
 
 ---
 
-# Day 28: Angular Modules & Component Communication (Theory)
+# Angular Modules & Component Communication (Theory)
 
 Today, I learned about Angular Modules (NgModule) and dived deeper into the theory of Component Communication. Here are my notes:
 
@@ -113,8 +113,6 @@ I also learned how data flows between parent and child components:
   _(I'll be doing hands-on practice for this tomorrow!)_
 
 ---
-
-## Homework
 
 **1. What is a module, and two reasons modules exist**
 A module in Angular is essentially a container that groups related components, services, and other files together. Think of it like a folder that organizes a specific feature of the app.
